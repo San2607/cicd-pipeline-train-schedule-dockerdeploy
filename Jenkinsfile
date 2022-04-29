@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("San2607/train-schedule")
+                    app = docker.build("San2607/cicd-pipeline-train-schedule-jenkins")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
